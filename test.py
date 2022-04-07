@@ -1,4 +1,6 @@
 from code import TransIndv
-
-TransIndv('name','gavin')
+import code
+from code import *
+ 
+ 
 print(name)

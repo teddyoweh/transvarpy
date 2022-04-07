@@ -37,9 +37,12 @@ class TransDict:
             
     def add_suffix(self,suffix=None,index:int=None,value:str=None):
         """
-         Add a suffix to the current variable that has been created.
+         Add a suffix to the current variable that has been created using either the index or the value to identify which a prefix should be added to.`
          
-         add_suffix()
+         add_suffix(
+             suffix='_1'
+             index='0' 
+         )
         
         """
         if value is None:
@@ -51,6 +54,7 @@ class TransDict:
         
 class TransIndv:       
    def __init__(self,item,value):
+        """ app"""
         self.item = item
         
         self.globals = globals()[item]= value
@@ -59,14 +63,5 @@ class TransIndv:
  
  
  
- 
- 
-item = TransDict({
-    
-    
-    'name':'teddy',
-    'age':'15',
-    'course':'cs'
-})
-
-print(name)
+globals()
+print(globals())
