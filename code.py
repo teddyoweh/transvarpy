@@ -1,34 +1,58 @@
  
 
-class Lists:
+class TransDict:
  
     def __init__(self,items):
         self.items:dict = items
         for i in self.items:
             self.globals = globals()[i]= items[i]
-            print(teddy)
-     
- 
-    def add_prefix_all(self,prefix):
+            
+    def getdictval_value(self,string:str):
+      
+        return [t for x, t in enumerate(self.items) if t==string][0]
+    def getdictval_index(self,index:int):
+       
+        return [t for x, t in enumerate(self.items) if x==int(index)][0]
+    def add_prefix_all(self,prefix_a):
          for p in self.items:
-            pref = f'{p}{prefix}'
+            pref = f'{p}{prefix_a}'
             self.globals = globals()[pref]= self.items[p]
-    def add_suffix_all(self,suffix):
+    def add_suffix_all(self,suffix_a):
         for s in self.items:
-            suff = f'{suffix}{s}'
+            suff = f'{suffix_a}{s}'
+            self.varname = suff
             self.globals = globals()[suff]= self.items[s]
-            print(suff)
-    def add_prefix(self,prefix,index):
-               pass  
+          
+    def add_prefix(self,prefix=None,index:int=None,value:str=None):
+        """
+         Add a prefix to the current variable that has been created
         
+        """
+    
+        if value is None:
+            self.globals = globals()[f'{prefix}{self.getdictval_index(index)}']= self.items[self.getdictval_index(index)]
+        if index is None:
+            self.globals = globals()[f'{prefix}{self.getdictval_value(value)}']= self.items[self.getdictval_value(value)]
+            
+            
+    def add_suffix(self,suffix=None,index:int=None,value:str=None):
+        """
+         Add a suffix to the current variable that has been created.
+         
+         add_suffix()
         
-   
-  
+        """
+        if value is None:
+            self.globals = globals()[f'{self.getdictval_index(index)}{suffix}']= self.items[self.getdictval_index(index)]
+        if index is None:
+            self.globals = globals()[f'{self.getdictval_value(value)}{suffix}']= self.items[self.getdictval_value(value)]
+            
+            
+        
+class TransIndv:       
+   def __init__(self,item,value):
+        self.item = item
+        
+        self.globals = globals()[item]= value
 
-item =Lists(
-    {'teddy':'oweh'
-     ,'keka':'dindu'}
-    )
-item.add_prefix_all('names_')
-item.add_suffix_all('names_')
- 
+
