@@ -1,4 +1,4 @@
 from code import TransIndv
 
-item = TransIndv('name','gavin')
+TransIndv('name','gavin')
 print(name)

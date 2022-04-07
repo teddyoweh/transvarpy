@@ -56,3 +56,17 @@ class TransIndv:
         self.globals = globals()[item]= value
 
 
+ 
+ 
+ 
+ 
+ 
+item = TransDict({
+    
+    
+    'name':'teddy',
+    'age':'15',
+    'course':'cs'
+})
+
+print(name)
