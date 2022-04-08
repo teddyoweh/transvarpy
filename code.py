@@ -62,6 +62,16 @@ class TransIndv:
 
  
  
- 
-globals()
-print(globals())
+TransIndv('joe','mark')
+
+
+blah = TransDict(
+    
+    
+    {
+        'name':'Dashon',
+        'his':joe
+    }
+)
+blah.add_prefix('student_',value='name')
+print(student_name)
