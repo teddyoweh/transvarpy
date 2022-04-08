@@ -59,19 +59,18 @@ class TransIndv:
         
         self.globals = globals()[item]= value
 
+def fn(name):
+   return name
 
+TransIndv('food','hamsandwhich') 
+random = ['school','box','org','class1']
  
- 
-TransIndv('joe','mark')
+for i in random:
+   kk = TransDict({
+       i:fn('heLLO WORLD')
+   })
+   kk.add_suffix('_avery',index='0')
+    
 
 
-blah = TransDict(
-    
-    
-    {
-        'name':'Dashon',
-        'his':joe
-    }
-)
-blah.add_prefix('student_',value='name')
-print(student_name)
+print(class1_avery)
