@@ -75,8 +75,9 @@ class TransIndv:
         suff = f'{suffix_a}{self.item}'
         self.varname = suff
         self.globals = globals()[suff]= self.items
-          x3 = input('Enter the coeff of x^3')
-box = []
+        
+
+
+
 TransIndv('i','1')
 
-print(i)
