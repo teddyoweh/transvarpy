@@ -76,16 +76,7 @@ class TransIndv:
         self.varname = suff
         self.globals = globals()[suff]= self.items
           
+box = []
+TransIndv('i','1')
 
-
-TransIndv('x','boyyy')
-
-def action(var,str):
-    TransIndv(var,str)
-    
-class example:
-    def __init__(self,var,str):
-        var1=var
-       TransIndv(var,str)
-       print(var)
-    
+print(i)
