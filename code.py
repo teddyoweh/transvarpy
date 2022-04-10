@@ -80,4 +80,12 @@ class TransIndv:
 
 TransIndv('x','boyyy')
 
-print(x)
+def action(var,str):
+    TransIndv(var,str)
+    
+class example:
+    def __init__(self,var,str):
+        var1=var
+       TransIndv(var,str)
+       print(var)
+    
