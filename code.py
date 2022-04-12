@@ -80,19 +80,8 @@ class TransIndv:
 items = ['name','class','year']
 for item in items:
     TransIndv(item,'teddy')
-age = 'teddy'
+
+print(name)
 
 
-
-
-
-
-
-
-
-
-
-
-
-TransIndv('stat','hello teddy')
-print(stat)
+ 
