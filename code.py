@@ -77,7 +77,22 @@ class TransIndv:
         self.globals = globals()[suff]= self.items
         
 
+items = ['name','class','year']
+for item in items:
+    TransIndv(item,'teddy')
+age = 'teddy'
 
 
-TransIndv('i','1')
 
+
+
+
+
+
+
+
+
+
+
+TransIndv('stat','hello teddy')
+print(stat)
