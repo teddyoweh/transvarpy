@@ -14,14 +14,17 @@ class TransDict:
        
         return [t for x, t in enumerate(self.items) if x==int(index)][0]
     def add_prefix_all(self,prefix_a):
-         for p in self.items:
-            pref = f'{p}{prefix_a}'
+        for p in self.items:
+            pref = f'{prefix_a}{p}'
             self.globals = globals()[pref]= self.items[p]
+        
     def add_suffix_all(self,suffix_a):
         for s in self.items:
-            suff = f'{suffix_a}{s}'
+            suff = f'{s}{suffix_a}'
             self.varname = suff
+            
             self.globals = globals()[suff]= self.items[s]
+        
           
     def add_prefix(self,prefix=None,index:int=None,value:str=None):
         """
@@ -77,11 +80,46 @@ class TransIndv:
         self.globals = globals()[suff]= self.items
         
 
-items = ['name','class','year']
-for item in items:
-    TransIndv(item,'teddy')
+class TransFile:
+    
+    def __init__(self,filename):
+        try:
+            file = open(filename,'r')
+        except FileNotFoundError:
+            print("{} is not in directory".format(filename))
+        else:
+            files = file.readlines()
+            box  = {}
+            for i in files:
+                i = i.strip('\n')
+                nam = i.split('=')
+                
+                for i in range(50):
+                    space = ' '*i
+                    nam[0]=nam[0].replace(space,'')
+                    nam[1]=nam[1].replace(space,'')
+                box[nam[0]] =nam[1]
+            
+            self.box = box
 
+    def init(self):
+        self.newd = TransDict(self.box)
+    def init_prefix(self,prefix):
+        self.newd.add_prefix_all(prefix)
+    def init_suffix(self,suffix):
+        self.newd.add_suffix_all(suffix)
+    def print_var(self):
+        print(f' {len(self.box)} Variables Created: ')
+        for num,los in enumerate(self.box):
+           
+            statement = '[{}] {}={}'.format(num,los,self.box[los])
+            print(statement)
+app = TransFile('SETUP')
+app.init()
+app.init_prefix('n_')
+
+app.init_suffix('_1')
+app.print_var()
 print(name)
-
-
- 
+print(n_name)
+print(name_1)
