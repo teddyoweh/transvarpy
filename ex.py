@@ -1,8 +1,6 @@
 import code 
-from code import *
  
-from code import TransIndv
 
 
-TransIndv('name', 'action')
+code.TransIndv('name', 'action')
 print(globals())

@@ -114,10 +114,5 @@ class TransFile:
            
             statement = '[{}] {}={}'.format(num,los,self.box[los])
             print(statement)
-app = TransFile('SETUP')
-app.init()
-app.init_prefix('n_')
-
-app.init_suffix('_1')
-#app.print_var()
+ 
  
