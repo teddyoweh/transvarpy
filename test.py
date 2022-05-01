@@ -3,7 +3,7 @@ def gettype(input):
 
 
 oo  = {'sd':4}
-print(gettype(oo))
+tra(gettype(oo))
 
 
 types  = ['str','list','dict','float','int','long']
