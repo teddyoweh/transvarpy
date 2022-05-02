@@ -118,5 +118,5 @@ class TransFile:
 
 
 
-TransIndv('name','teddy')
-print(name)
+TransIndv('5','teddy')
+print(5)
