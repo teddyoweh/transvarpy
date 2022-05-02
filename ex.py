@@ -1,6 +1,6 @@
 import code 
  
 
-
-code.TransIndv('name', 'action')
-print(globals())
+def stuff():
+    code.TransIndv('name', 'action')
+ 
