@@ -115,4 +115,8 @@ class TransFile:
             statement = '[{}] {}={}'.format(num,los,self.box[los])
             print(statement)
  
- 
+
+
+
+TransIndv('name','teddy')
+print(name)
