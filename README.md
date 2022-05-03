@@ -90,66 +90,14 @@ print(car)
 >>> ford
 
 ```
-### Using it
-
-First, import Omark from Omark
-
-```Python
-from Omark import Omark 
-```
-
- 
-## Initialize Omark
-First, let's create a new Omark object. For this , just provide the students in a text file and a folder of all the students image with the names saved as the same name stored in the text file.
-
-```Python
- 
-om = Omark(students='file.txt',data='folder')
+## SETUP FILES IMPLEMENTATION
+```txt
+name = severin
+age = 10
+class = grade10
+date = avery
 
 ```
-## View all details
- 
-
-```Python
- 
-om = Omark(students='file.txt',data='folder')
-print(om.register())
-
-
-```
-## View all students
- 
-
-```Python
- 
-om = Omark(students='file.txt',data='folder')
-print(om.students)
-
-
-```
-## View all absent students
- 
-
-```Python
- 
-om = Omark(students='file.txt',data='folder')
-print(om.absent)
-
-
-```
-
- ## View all present students
- 
-
-```Python
- 
-om = Omark(students='file.txt',data='folder')
-print(om.present)
-
-
-```
-
-
 
 License
 ----
