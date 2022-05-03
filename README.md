@@ -1,7 +1,7 @@
 # Pointers in Python
-This module is a different way of assigning variables in python.
+This module is a new method of assigning variables in python.
 
-The most popular languages that have pointers are C and C++, pointers allow a variable to be change by altering the memory address of the variable.
+The most popular languages that have pointers are C and C++, pointers allow a variable to be change by altering the memory address of the variable. 
 
 ## C Pointers 
 ```C
