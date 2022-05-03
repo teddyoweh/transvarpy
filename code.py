@@ -118,5 +118,5 @@ class TransFile:
 
 
 
-TransIndv('*','teddy')
-print(globals())
+TransIndv('f','teddy')
+print(f)
