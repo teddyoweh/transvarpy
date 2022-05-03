@@ -1,4 +1,5 @@
 # Pointers in Python
+This module is a different way of assigning variables in python.
 
 The most popular languages that have pointers are C and C++, pointers allow a variable to be change by altering the memory address of the variable.
 
@@ -29,12 +30,14 @@ int main(void) {
 ```
 
 # Overview
-The Omark Program was written with fast use in mind. It provides the following key features
+In python, once a variable is assigned, there's is now other way to change that variable
 
-  - Returns a list of total students in class
-  - Returns a list of students absent from class
-  - Returns a list of students present in class
- 
+```Python
+name = 'teddy'
+temp = '{}_'.format(name) # Adds _ at the end of the name variable ( teddy )
+name = temp 
+```
+
 
 
 ## Usage
