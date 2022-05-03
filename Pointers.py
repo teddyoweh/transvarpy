@@ -118,5 +118,8 @@ class TransFile:
 
 
 
-TransIndv('f','teddy')
-print(f)
+ 
+TransFile('SETUP').init()
+
+print(name)
+
