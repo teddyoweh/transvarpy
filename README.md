@@ -84,6 +84,7 @@ and when you call the variable name, it prints what has been assigned to it.
 print(car)
 
 ```
+## Output
 ```sh
  
 >>> ford
