@@ -104,6 +104,15 @@ date = avery
 ```Python
  
  TransFile('SETUP.txt').init()
+ print(class)
+ 
+
+```
+## Output
+```sh
+ 
+>>> grade10
+
 ```
 License
 ----
