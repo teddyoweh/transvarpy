@@ -91,6 +91,8 @@ print(car)
 
 ```
 ## SETUP FILES IMPLEMENTATION
+
+#### SETUP.txt
 ```txt
 name = severin
 age = 10
@@ -99,6 +101,10 @@ date = avery
 
 ```
 
+```Python
+ 
+ TransFile('SETUP.txt').init()
+```
 License
 ----
 
