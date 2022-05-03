@@ -60,7 +60,24 @@ mydict = {
 for key,content in mydict.items():
 	TransIndv(key,content)
 ```
-### 10 different variables have been created ( name,major,language,laptop,phone,class,address,age,food and car.
+## OR
+```Python
+mydict = {
+	'name':'teddy',
+	'major':'cs',
+	'language': 'English',
+	'laptop':'Mac',
+	'phone': 'Iphone',
+	'class':'calc 1',
+	'address':'est drive',
+	'age':'5',
+	'food':'burger',
+	'car':'ford'
+	}
+ TransDict(mydict)
+```
+10 different variables have been created ( name,major,language,laptop,phone,class,address,age,food and car.
+and when you call the variable name, it prints what has been assigned to it.
 
 ### Using it
 
