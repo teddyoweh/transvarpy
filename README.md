@@ -79,6 +79,16 @@ mydict = {
 10 different variables have been created ( name,major,language,laptop,phone,class,address,age,food and car.
 and when you call the variable name, it prints what has been assigned to it.
 
+```Python
+ 
+print(car)
+
+```
+```sh
+ 
+>>> ford
+
+```
 ### Using it
 
 First, import Omark from Omark
