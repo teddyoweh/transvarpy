@@ -40,16 +40,27 @@ name = temp
 
 
 
-## Usage
+## Implementation
 
-In the following paragraphs, I am going to describe how you can get and use Omark.
+Than creating 10 different variables, create a dictionay object, insert the variable name as the key and the content as what you want the variable name to be equals to.
 
-###  Getting it
-
-To download Omark , either fork this github repo or simply use Pypi via pip, install Omarke.
-```sh
-$ pip install Omarke
+```Python
+mydict = {
+	'name':'teddy',
+	'major':'cs',
+	'language': 'English',
+	'laptop':'Mac',
+	'phone': 'Iphone',
+	'class':'calc 1',
+	'address':'est drive',
+	'age':'5',
+	'food':'burger',
+	'car':'ford'
+	}
+for key,content in mydict.items():
+	TransIndv(key,content)
 ```
+### 10 different variables have been created ( name,major,language,laptop,phone,class,address,age,food and car.
 
 ### Using it
 
