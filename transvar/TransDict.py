@@ -1,4 +1,4 @@
-class TransDict:
+class transDict:
      
     def __init__(self,items):
         self.items:dict = items
