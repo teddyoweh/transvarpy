@@ -140,7 +140,7 @@ class transfile:
     def __merge(self,_globals):
         return(_globals.update(globals()))
     def init(self,_globals):
-        self.newd = TransDict(self.box)
+        self.newd = transdict(self.box)
         self.__merge(_globals)
     def prefix(self,prefix):
         self.newd.add_prefix_all(prefix)
