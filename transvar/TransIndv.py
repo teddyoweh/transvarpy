@@ -1,4 +1,4 @@
-class TransIndv:       
+class transindv:       
     def __init__(self,item,value):
         """ app"""
         self.item = item
