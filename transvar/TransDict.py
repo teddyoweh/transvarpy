@@ -6,7 +6,7 @@ class transDict:
             self.globals = globals()[i]= items[i]
     def init(self,_globals):
         """
-           prefix to all the variables that has been created.
+           efix to all the variables that has been created.
         
         """
         return(_globals.update(globals()))
