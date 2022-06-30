@@ -6,8 +6,8 @@ class transDict:
             self.globals = globals()[i]= items[i]
     def init(self,_globals):
         """
-          vaiables that has been created.
-        
+          viables that has been created.
+    
         """
         return(_globals.update(globals()))
     def __getdictval_value(self,string:str):
