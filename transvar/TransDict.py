@@ -42,7 +42,7 @@ class transdict:
     def add_prefix(self,prefix=None,index:int=None,value:str=None):
         """
          Add a prefix to a specific variable that has been created.
-        
+        ```add_suffix(suffix='_1' index='0' )
         """
     
         if value is None:
@@ -51,14 +51,11 @@ class transdict:
             self.globals = globals()[f'{prefix}{self.getdictval_value(value)}']= self.items[self.getdictval_value(value)]
             
             
-    def add_suffix(self,suffix=None,index:int=None,value:str=None):
+    def add_suffix(self,suffix:str=None,index:int=None,value:str=None):
         """
-         Add a suffix to the current variable that has been created using either the index or the value to identify which a prefix should be added to.`
+        Add a suffix to the current variable that has been created using either the index or the value to identify which a prefix should be added to.`
          
-         add_suffix(
-             suffix='_1'
-             index='0' 
-         )
+        ```add_suffix(suffix='_1' index='0' )
         
         """
         if value is None:
