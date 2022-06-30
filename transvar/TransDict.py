@@ -19,7 +19,7 @@ class transDict:
         
     def add_suffix_all(self,suffix_a):
         """
-         Add a prefix to all the ic variable that has been created
+         Add a prefix to all the c variable that has been created
         
         """
         for s in self.items:
