@@ -1,7 +1,4 @@
-from transvar import transfile
+from transvar import transindv
 
-s= transfile('SETUP')
-s.init(globals())
-s.print_vars()
-#s._()
+transindv('name','teddy').init(globals())
 print(name)
