@@ -9,7 +9,7 @@ class transDict:
     def getdictval_value(self,string:str):
       
         return [t for x, t in enumerate(self.items) if t==string][0]
-    def getdictval_index(self,index:int):
+    def __getdictval_index(self,index:int):
        
         return [t for x, t in enumerate(self.items) if x==int(index)][0]
     def add_prefix_all(self,prefix_a):
