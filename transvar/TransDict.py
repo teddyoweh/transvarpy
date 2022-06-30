@@ -35,8 +35,9 @@ class transdict:
         
     def add_suffix_all(self,suffix_a):
         """
-         Add a suffix to all the variables that has been created.
-        
+        Add a suffix to all the variables that has been created.
+        Args:
+            suffix_a (str): A string to add as a suffix to all the variables created.
         """
         for s in self.items:
             suff = f'{s}{suffix_a}'
