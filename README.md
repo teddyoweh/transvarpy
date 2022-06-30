@@ -41,8 +41,25 @@ name = temp
 
 
 ## Implementation
-
-Than creating 10 different variables, create a dictionay object, insert the variable name as the key and the content as what you want the variable name to be equals to.
+ ### import modules
+ ```py
+from transvar import transdict
+from transvar import transfile
+from transvar import transindv
+ ```
+ 
+ ### Basic 
+ ```py
+ newvar = transvar('name','teddy)
+ newvar.init(globals())
+ print(name)
+ ```
+ #### name gets created as a variable with the value name as teddy
+ ```sh
+ >>> teddy
+ ```
+ ### Dictionary Implementation 
+Rather than creating 10 different variables, create a dictionay object, insert the variable name as the key and the content as what you want the variable name to be equals to.
 
 ```Python
 mydict = {
@@ -58,7 +75,7 @@ mydict = {
 	'car':'ford'
 	}
 for key,content in mydict.items():
-	TransIndv(key,content)
+	transindv(key,content).init(globals())
 ```
 ## OR
 ```Python
@@ -74,7 +91,7 @@ mydict = {
 	'food':'burger',
 	'car':'ford'
 	}
- TransDict(mydict)
+ transdict(mydict).init(globals())
 ```
 10 different variables have been created ( name,major,language,laptop,phone,class,address,age,food and car.
 and when you call the variable name, it prints what has been assigned to it.
@@ -90,8 +107,8 @@ print(car)
 >>> ford
 
 ```
-## SETUP FILES IMPLEMENTATION
-
+### Files Imp IMPLEMENTATION
+##### Setup File example
 #### SETUP.txt
 ```txt
 name = severin
@@ -103,7 +120,7 @@ date = avery
 
 ```Python
  
- TransFile('SETUP.txt').init()
+ transfile('SETUP.txt').init(globals())
  print(class)
  
 
