@@ -1,4 +1,4 @@
-from transvar import transdict
+from transvar.transdict import transdict
 class transfile:
     
     def __init__(self,filename):
@@ -20,10 +20,9 @@ class transfile:
                 box[nam[0]] =nam[1]
             
             self.box = box
-    def __merge(self,_globals):
+    def _(self,_globals):
         return(_globals.update(globals()))
-    def init(self,globals):
-        self.__merge(globals())
+    def init(self):
         self.newd = transdict(self.box)
     def init_prefix(self,prefix):
         self.newd.add_prefix_all(prefix)
