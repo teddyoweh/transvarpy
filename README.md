@@ -107,7 +107,7 @@ print(car)
 >>> ford
 
 ```
-### Files Imp IMPLEMENTATION
+### Files Implementation
 ##### Setup File example
 #### SETUP.txt
 ```txt
