@@ -1,12 +1,22 @@
  
 
-class TransDict:
+class transdict:
  
     def __init__(self,items):
+        """
+        Args:
+            items (dict): A dictionary containing variable names as the keys and the target value of the variables as the values.
+        """
         self.items:dict = items
         for i in self.items:
             self.globals = globals()[i]= items[i]
-    def _(self,_globals):
+    def init(self,_globals):
+        """
+        `transdict.init(globals())\n
+        Parse the globals function
+        
+      
+        """
         return(_globals.update(globals()))
     def getdictval_value(self,string:str):
       
@@ -18,8 +28,17 @@ class TransDict:
         for p in self.items:
             pref = f'{prefix_a}{p}'
             self.globals = globals()[pref]= self.items[p]
-        
+        """
+         Add a prefix to all the variables that has been created.
+        Args:
+            prefix_a (str): A string to add as a prefix to all the variables created.
+        """
     def add_suffix_all(self,suffix_a):
+        """
+         Add a suffix to all the variables that has been created.
+        Args:
+            suffix_a (str): A string to add as a prefix to all the variables created.
+        """
         for s in self.items:
             suff = f'{s}{suffix_a}'
             self.varname = suff
@@ -29,8 +48,11 @@ class TransDict:
           
     def add_prefix(self,prefix=None,index:int=None,value:str=None):
         """
-         Add a prefix to the current variable that has been created
-        
+         Add a prefix to a specific variable that has been created.
+         
+        `add_prefix(prefix='_1' index='0' )`
+        ## or 
+        `add_prefix(prefix='_1' value='dict_key' )`
         """
     
         if value is None:
@@ -41,13 +63,12 @@ class TransDict:
             
     def add_suffix(self,suffix=None,index:int=None,value:str=None):
         """
-         Add a suffix to the current variable that has been created using either the index or the value to identify which a prefix should be added to.`
-         
-         add_suffix(
-             suffix='_1'
-             index='0' 
-         )
         
+         Add a suffix to the current variable that has been created using either the index or the value to identify which a prefix should be added to.
+        
+        `add_suffix(suffix='_1' index='0')`
+        ## or 
+        `add_suffix(suffix='_1' value='dict_key') 
         """
         if value is None:
             self.globals = globals()[f'{self.getdictval_index(index)}{suffix}']= self.items[self.getdictval_index(index)]
@@ -57,13 +78,18 @@ class TransDict:
             
         
 class transindv:       
-    def __init__(self,item,value):
-        """ app"""
+    def __init__(self,var,value):
+        """
+        Args: (var,value)
+        var: Name of the variable to be create
+        value: Value to be assigned to the variable that has been created.
+        """
+        item = var
         self.item = item
         
         self.globals = globals()[item]= value
         
-    def _(self,_globals):
+    def init(self,_globals):
         return(_globals.update(globals())) 
     def getdictval_value(self,string:str):
       
@@ -72,11 +98,19 @@ class transindv:
        
         return [t for x, t in enumerate(self.items) if x==int(index)][0]
     def add_prefix(self,prefix_a):
-         
+        """
+         Add a prefix to all the variables that has been created.
+        Args:
+            prefix_a (str): A string to add as a prefix to all the variables created.
+        """
         pref = f'{self.item}{prefix_a}'
         self.globals = globals()[pref]= self.item
     def add_suffix(self,suffix_a):
-      
+        """
+         Add a suffix to all the variables that has been created.
+        Args:
+            suffix_a (str): A string to add as a suffix to all the variables created.
+        """
         suff = f'{suffix_a}{self.item}'
         self.varname = suff
         self.globals = globals()[suff]= self.items
