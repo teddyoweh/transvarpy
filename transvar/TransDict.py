@@ -42,7 +42,7 @@ class transdict:
     def add_prefix(self,prefix=None,index:int=None,value:str=None):
         """
          Add a prefix to a specific variable that has been created.
-        ```add_suffix(suffix='_1' index='0' )
+        ```add_prefix(prefix='_1' index='0' )
         """
     
         if value is None:
