@@ -1,6 +1,6 @@
-from transvar import transfile
+from transvar import TransFile
 
 s= TransFile('SETUP')
-s.init()
-s._(globals())
+s.init(globals())
+#s._()
 print(name)
