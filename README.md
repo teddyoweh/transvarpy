@@ -30,7 +30,8 @@ int main(void) {
 ```
 
 # Overview
-In python, once a variable is assigned, there's is now other way to change that variable
+In python, there has been one standard way of declaring a variable and no way of editing the varibale name.
+The ```transvar``` package/algorithm introduces a more efficient way of declaring variables and editing variable name, and gives methods which can be used for large scale programs & projects.
 
 ```Python
 name = 'teddy'
