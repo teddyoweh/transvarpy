@@ -20,9 +20,10 @@ class transfile:
                 box[nam[0]] =nam[1]
             
             self.box = box
-    def _(self,_globals):
+    def __merge(self,_globals):
         return(_globals.update(globals()))
-    def init(self):
+    def init(self,globals):
+        self.__merge(globals())
         self.newd = transdict(self.box)
     def init_prefix(self,prefix):
         self.newd.add_prefix_all(prefix)
