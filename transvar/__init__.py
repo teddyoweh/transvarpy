@@ -56,7 +56,7 @@ class TransDict:
             
             
         
-class TransIndv:       
+class transindv:       
     def __init__(self,item,value):
         """ app"""
         self.item = item
@@ -108,11 +108,11 @@ class transfile:
     def init(self,_globals):
         self.newd = TransDict(self.box)
         self.__merge(_globals)
-    def init_prefix(self,prefix):
+    def prefix(self,prefix):
         self.newd.add_prefix_all(prefix)
-    def init_suffix(self,suffix):
+    def suffix(self,suffix):
         self.newd.add_suffix_all(suffix)
-    def print_var(self):
+    def print_vars(self):
         print(f' {len(self.box)} Variables Created: ')
         for num,los in enumerate(self.box):
            
