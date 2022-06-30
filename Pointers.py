@@ -6,7 +6,8 @@ class TransDict:
         self.items:dict = items
         for i in self.items:
             self.globals = globals()[i]= items[i]
-            
+    def _(self,_globals):
+        return(_globals.update(globals()))
     def getdictval_value(self,string:str):
       
         return [t for x, t in enumerate(self.items) if t==string][0]
@@ -62,7 +63,8 @@ class TransIndv:
         
         self.globals = globals()[item]= value
         
-      
+    def _(self,_globals):
+        return(_globals.update(globals())) 
     def getdictval_value(self,string:str):
       
         return [t for x, t in enumerate(self.items) if t==string][0]
@@ -101,7 +103,7 @@ class TransFile:
                 box[nam[0]] =nam[1]
             
             self.box = box
-
+    
     def init(self):
         self.newd = TransDict(self.box)
     def init_prefix(self,prefix):
