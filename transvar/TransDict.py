@@ -6,7 +6,7 @@ class transdict:
             self.globals = globals()[i]= items[i]
     def init(self,_globals):
         """
-          `transdict.init(globals()) 
+        `transdict.init(globals()) 
         Parse the globals function\n
         
       
