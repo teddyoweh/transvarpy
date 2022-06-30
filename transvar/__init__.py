@@ -107,7 +107,7 @@ class transindv:
         self.globals = globals()[pref]= self.item
     def add_suffix(self,suffix_a):
         """
-         Add a suffix to the variables that has been created.
+         Add a suffix to the variable that has been created.
         Args:
             suffix_a (str): A string to add as a suffix to all the variables created.
         """
