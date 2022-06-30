@@ -6,7 +6,7 @@ class transDict:
             self.globals = globals()[i]= items[i]
     def _(self,_globals):
         return(_globals.update(globals()))
-    def getdictval_value(self,string:str):
+    def __getdictval_value(self,string:str):
       
         return [t for x, t in enumerate(self.items) if t==string][0]
     def __getdictval_index(self,index:int):
