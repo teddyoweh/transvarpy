@@ -1,4 +1,4 @@
-class transDict:
+class transcict:
      
     def __init__(self,items):
         self.items:dict = items
@@ -7,7 +7,7 @@ class transDict:
     def init(self,_globals):
         """
         
-    
+        tr
         """
         return(_globals.update(globals()))
     def __getdictval_value(self,string:str):
