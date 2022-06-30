@@ -14,7 +14,7 @@ class transDict:
         return [t for x, t in enumerate(self.items) if x==int(index)][0]
     def add_prefix_all(self,prefix_a):
         """
-         Add a suffix to all the variables that has been created
+         Add a psuffix to all the variables that has been created
         
         """
         for p in self.items:
