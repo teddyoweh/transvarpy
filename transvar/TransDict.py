@@ -6,7 +6,7 @@ class transDict:
             self.globals = globals()[i]= items[i]
     def init(self,_globals):
         """
-          ib that has been created.
+          b that has been created.
     
         """
         return(_globals.update(globals()))
