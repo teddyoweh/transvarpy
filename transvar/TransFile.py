@@ -1,5 +1,5 @@
 from transvar import transdict
-class TransFile:
+class transFile:
     
     def __init__(self,filename):
         try:
