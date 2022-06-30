@@ -5,6 +5,10 @@ class transDict:
         for i in self.items:
             self.globals = globals()[i]= items[i]
     def init(self,_globals):
+        """
+         Add a prefix to all the variables that has been created.
+        
+        """
         return(_globals.update(globals()))
     def __getdictval_value(self,string:str):
       
