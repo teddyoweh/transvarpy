@@ -1,4 +1,4 @@
-class trancict:
+class transcict:
      
     def __init__(self,items):
         self.items:dict = items
