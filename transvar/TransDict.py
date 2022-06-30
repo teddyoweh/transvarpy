@@ -18,6 +18,10 @@ class transDict:
             self.globals = globals()[pref]= self.items[p]
         
     def add_suffix_all(self,suffix_a):
+        """
+         Add a prefix to all specific variable that has been created
+        
+        """
         for s in self.items:
             suff = f'{s}{suffix_a}'
             self.varname = suff
