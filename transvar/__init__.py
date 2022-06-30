@@ -1,3 +1,8 @@
+
+# -*- coding=utf-8 -*-
+# Name: teddy oweh
+# Email: teddy@teddyoweh.net
+# Message: Feel Free To Contact Me on Enquires or Question, il Reply :)
 from transvar import transdict
 from transvar import transfile
 from transvar import transindv
