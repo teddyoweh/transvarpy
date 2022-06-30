@@ -1,8 +1,7 @@
 class transdict:
      
     def __init__(self,items:dict):
-        """_summary_
-
+        """
         Args:
             items (dict): A dictionary containing variable names as the keys and the target value of the variables as the values.
         """
