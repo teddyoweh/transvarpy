@@ -45,7 +45,7 @@ class transdict:
          
         `add_prefix(prefix='_1' index='0' )`
         ## or 
-        `add_prefix(prefix='_1' index='0' )`
+        `add_prefix(prefix='_1' value='dict_key' )`
         """
     
         if value is None:
