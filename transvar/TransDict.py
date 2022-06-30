@@ -4,7 +4,7 @@ class transDict:
         self.items:dict = items
         for i in self.items:
             self.globals = globals()[i]= items[i]
-    def _(self,_globals):
+    def init(self,_globals):
         return(_globals.update(globals()))
     def __getdictval_value(self,string:str):
       
