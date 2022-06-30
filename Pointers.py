@@ -103,7 +103,8 @@ class TransFile:
                 box[nam[0]] =nam[1]
             
             self.box = box
-    
+    def _(self,_globals):
+        return(_globals.update(globals()))
     def init(self):
         self.newd = TransDict(self.box)
     def init_prefix(self,prefix):
