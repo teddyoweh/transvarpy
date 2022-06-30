@@ -7,7 +7,7 @@ class transdict:
     def init(self,_globals):
         """
         `transdict.init(globals())\n
-        Parse the globals function\
+        Parse the globals function
         
       
         """
