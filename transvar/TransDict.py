@@ -1,6 +1,6 @@
 class transdict:
      
-    def __init__(self,items):
+    def __init__(self,items:dict):
         self.items:dict = items
         for i in self.items:
             self.globals = globals()[i]= items[i]
