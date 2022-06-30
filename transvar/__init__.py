@@ -99,7 +99,7 @@ class transindv:
         return [t for x, t in enumerate(self.items) if x==int(index)][0]
     def add_prefix(self,prefix_a):
         """
-         Add a prefix to all the variables that has been created.
+         Add a prefix to the variable that has been created.
         Args:
             prefix_a (str): A string to add as a prefix to all the variables created.
         """
@@ -107,7 +107,7 @@ class transindv:
         self.globals = globals()[pref]= self.item
     def add_suffix(self,suffix_a):
         """
-         Add a suffix to all the variables that has been created.
+         Add a suffix to the variables that has been created.
         Args:
             suffix_a (str): A string to add as a suffix to all the variables created.
         """
