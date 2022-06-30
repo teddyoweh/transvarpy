@@ -19,7 +19,7 @@ class transDict:
         
     def add_suffix_all(self,suffix_a):
         """
-         Add a sufffix to all the variables that has been created
+         Add a suffix to all the variables that has been created
         
         """
         for s in self.items:
