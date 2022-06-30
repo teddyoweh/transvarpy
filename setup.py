@@ -6,7 +6,7 @@ setup(
    author='teddyoweh',
    author_email='teddy@teddyoweh.net',
    packages=['package_name', 'package_name.test'],
-   scripts=['Ttransvar/__init__.py'],
+   scripts=['transvar/__init__.py'],
    url='http://pypi.python.org/pypi/transvar/',
    license='LICENSE.txt',
    description='A new method of declaring and editing variable names',
