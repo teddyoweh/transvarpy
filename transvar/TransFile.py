@@ -1,4 +1,4 @@
-from Transvar import TransDict
+from transvar import TransDict
 class TransFile:
     
     def __init__(self,filename):
