@@ -44,9 +44,9 @@ name = temp
 ## Implementation
  ### import modules
  ```py
-from transvar import transdict
-from transvar import transfile
-from transvar import transindv
+from transvarpy import transdict
+from transvarpy import transfile
+from transvarpy import transindv
  ```
  
  ### Basic Implementation
