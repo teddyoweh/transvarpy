@@ -122,7 +122,4 @@ class TransFile:
 
 
  
-TransFile('SETUP').init()
-
-print(name)
-
+ 
