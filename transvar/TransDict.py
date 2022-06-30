@@ -6,7 +6,7 @@ class transDict:
             self.globals = globals()[i]= items[i]
     def init(self,_globals):
         """
-        ta bed.
+        ta be.
     
         """
         return(_globals.update(globals()))
