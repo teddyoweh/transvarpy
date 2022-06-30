@@ -50,7 +50,7 @@ from transvar import transindv
  
  ### Basic 
  ```py
- newvar = transvar('name','teddy)
+ newvar = transvar('name','teddy')
  newvar.init(globals())
  print(name)
  ```
