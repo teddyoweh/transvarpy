@@ -49,7 +49,7 @@ from transvar import transfile
 from transvar import transindv
  ```
  
- ### Basic 
+ ### Basic Implementation
  ```py
  newvar = transvar('name','teddy')
  newvar.init(globals())
