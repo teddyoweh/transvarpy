@@ -1,0 +1,9 @@
+LICENSE.TXT
+README.md
+pyproject.toml
+setup.py
+transvarpy/__init__.py
+transvarpy.egg-info/PKG-INFO
+transvarpy.egg-info/SOURCES.txt
+transvarpy.egg-info/dependency_links.txt
+transvarpy.egg-info/top_level.txt
