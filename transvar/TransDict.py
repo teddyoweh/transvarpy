@@ -27,7 +27,7 @@ class transDict:
           
     def add_prefix(self,prefix=None,index:int=None,value:str=None):
         """
-         Add a prefix to the current variable that has been created
+         Add a prefix to a specific variable that has been created
         
         """
     
