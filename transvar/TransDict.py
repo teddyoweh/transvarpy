@@ -1,6 +1,11 @@
 class transdict:
      
     def __init__(self,items:dict):
+        """_summary_
+
+        Args:
+            items (dict): A dictionary containing variable names as the keys and the target value of the variables as the values.
+        """
         self.items:dict = items
         for i in self.items:
             self.globals = globals()[i]= items[i]
@@ -18,10 +23,11 @@ class transdict:
     def __getdictval_index(self,index:int):
        
         return [t for x, t in enumerate(self.items) if x==int(index)][0]
-    def add_prefix_all(self,prefix_a):
+    def add_prefix_all(self,prefix_a:str):
         """
          Add a prefix to all the variables that has been created.
-        `add_prefix_all
+        Args:
+            prefix_a (str): A string to add as a prefix to all the variables created.
         """
         for p in self.items:
             pref = f'{prefix_a}{p}'
