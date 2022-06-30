@@ -6,7 +6,7 @@ class transDict:
             self.globals = globals()[i]= items[i]
     def init(self,_globals):
         """
-          vibes that has been created.
+          ibes that has been created.
     
         """
         return(_globals.update(globals()))
