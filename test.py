@@ -1,4 +1,4 @@
-from Pointers import TransFile
+from transvar import transfile
 
 s= TransFile('SETUP')
 s.init()
