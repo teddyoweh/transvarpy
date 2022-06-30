@@ -7,7 +7,7 @@ class transdict:
     def init(self,_globals):
         """
         
-        t
+        tr
         """
         return(_globals.update(globals()))
     def __getdictval_value(self,string:str):
