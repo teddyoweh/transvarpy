@@ -6,7 +6,7 @@ class transDict:
             self.globals = globals()[i]= items[i]
     def init(self,_globals):
         """
-          viables that has been created.
+          vibles that has been created.
     
         """
         return(_globals.update(globals()))
